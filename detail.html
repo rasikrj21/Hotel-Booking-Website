@@ -6,7 +6,7 @@
         <title>Detail</title>
         <link rel="stylesheet" href="C:\Users\Rasik\Downloads\Hotel-Booking-Website\styles\detail.css">
         <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="C:\Users\Rasik\Downloads\Hotel-Booking-Website\styles\common.css">
+        
 
     </head>
     <body>
@@ -14,40 +14,48 @@
             
         
                 <header>
-                <img style="height: 60px;" src="C:\Users\Rasik\Downloads\Hotel-Booking-Website\assests\images\logo.png" alt="logo" id="logo">
+                    <a href="C:\Users\Rasik\Downloads\Hotel-Booking-Website\index.html">
+                <img style="height: 60px;" src="C:\Users\Rasik\Downloads\Hotel-Booking-Website\assests\images\logo.png" alt="logo" id="logo"></a>
                 <a href="C:\Users\Rasik\Downloads\Hotel-Booking-Website\login.html" >Login</a>
                 </header>
 
             <div class="main">
-                <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="radissonbluhotel" id="hotel-img"><br>
-                <form action="C:\Users\Rasik\Downloads\Hotel-Booking-Website\payment.html" method="get" target="_self" id="book-form">
+                <div class="payment-form">
+                    <div style="width: 70%;">
+                <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="radissonbluhotel">
+            </div>
+                <hr style="height: 400px; border: 1px solid black">
+                    <div style="border-left: transparent; width:30%">
+                <form action="C:\Users\Rasik\Downloads\Hotel-Booking-Website\payment.html" method="get" target="_self">
                     <div class="form-item">
-                    <label for="Adults">Adults:</label>
-                    <input type="number" name="adult" id="dno" min="1" required>
-                     </div>
-                     <div class="form-item">
-                    <label for="name">Names:</label>
-                    <input type="text" name="name" id="dname" autocomplete="off" required>
-                     </div>
-                    <div class="form-items">    
-                    <label for="fdate">From Date:</label>
-                    <input type="date" name="fromdate" id="fdate" required>
+                        <label for="adults">Adults:</label>
+                        <input class="input" type="number" id="adults" name="adults" min="1" required>
                     </div>
-                    <div class="form-items">
-                    <label for="tdate">To Date:</label>
-                    <input type="date" name="todate" id="tdate" required>
+                    <div class="form-item">
+                        <label for="name">Name:</label>
+                        <input class="input" type="text" id="name" name="name" required>
                     </div>
-                    <div class="form-items">
-                    <label for="total">Total:</label>
-                    <input type="text" name="price" id="total" disabled>
+                    <div class="form-item">
+                        <label for="from">From Date:</label>
+                        <input class="input" type="date" id="from" name="from" required>
                     </div>
-                    <input type="submit" value="Book Now" name="booknow" id="bnow">
+                    <div class="form-item">
+                        <label for="to">To Date:</label>
+                        <input class="input" type="date" id="to" name="to" required>
+                    </div>
+                    <div class="form-item">
+                        <label for="total">Total:</label>
+                        <input class="input" type="text" id="total" name="total" readonly>
+                    </div>
+                    <input type="submit" value="Book Now" style="padding:8px 6px">
                 </form>
+            </div>
+        </div>
                 
                 <h2>Radission Blu Hotel</h2>
-                <p>RATING</p>
+                <h4 style="font-family: cursive;">RATING</h4>
                 <p>5 Star</p>
-                <p>AMENITIES</p>
+                <h4 style="font-family: cursive;">Ameneties</h4>
                 <ul>
                     <li>Room service</li>
                     <li>Restaurant</li>
@@ -55,8 +63,8 @@
                     <li>Fitness center</li>
                     <li>Pool</li>
                 </ul>
-                <h5>DESCRIPTION</h5>
-                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit quis mollitia totam, dignissimos facere fugit quia omnis veniam, autem magnam nostrum aspernatur provident? Libero aliquid maiores eum dolore facere perspiciatis!</P>
+                <h4 style="font-family: cursive;">DESCRIPTION</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit quis mollitia totam, dignissimos facere fugit quia omnis veniam, autem magnam nostrum aspernatur provident? Libero aliquid maiores eum dolore facere perspiciatis!</p>
             
             </div>
 
