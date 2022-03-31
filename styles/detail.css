@@ -24,9 +24,6 @@ header {
 header img {
 	margin-left: 1%;
 }
-header a {
-	margin-right: 2%;
-}
 footer {
 	background-color: rosybrown;
 	display: flex;
@@ -37,6 +34,9 @@ footer {
 	width: 100%;
 	bottom: 0;
 	padding: 0 2%;
+}
+footer p {
+	align-self: flex-end;
 }
 
 form {
@@ -55,6 +55,12 @@ form {
 .main-wrapper {
 	width: 100%;
 	height: 100%;
+}
+
+.form-item {
+	margin: 4% 8%;
+	display: flex;
+	justify-content: space-between;
 }
 
 .payment-form {
@@ -79,9 +85,6 @@ form {
 	width: 60%;
 }
 
-.socials {
-	margin-right: 3%;
-}
 .socials a {
 	display: inline;
 }

@@ -4,13 +4,12 @@ html, body {
 }
 body {
 	margin: 0;
-	background-color: #e0e0e0;
-	font-family: ubuntu;
+	background-color: #e0e0e0!important;
+	font-family: ubuntu!important;
 }
 a {
-	text-decoration: none;
-	color: black;
-	font-weight: 600;
+	text-decoration: none!important;
+	color: black!important;
 }
 header {
 	background-color: rosybrown;
@@ -38,6 +37,9 @@ footer {
 	bottom: 0;
 	padding: 0 2%;
 }
+footer p {
+	align-self: flex-end;
+}
 
 .content {
 	background-color: rgb(132, 136, 139);
@@ -61,6 +63,12 @@ footer {
 	border-radius: 5px;
 }
 
+.form-item {
+	margin: 4% 8%;
+	display: flex;
+	justify-content: space-between;
+}
+
 .main {
 	padding: 60px 0;
 }
@@ -73,9 +81,6 @@ footer {
 	height: 100%;
 }
 
-.socials {
-	margin-right: 3%;
-}
 .socials a {
 	display: inline;
 }
