@@ -1,3 +1,4 @@
+/* Styling for the global elements */
 html, body {
 	width: 100%;
 	height: 100%;
@@ -54,6 +55,7 @@ footer p {
 	margin: 0 1%;
 }
 
+/* Styling for the modals */
 .form-item {
 	margin: 4% 8%;
 	display: flex;
@@ -86,6 +88,8 @@ footer p {
 	width: 250px;
 	height: 250px;
 }
+
+/* Social icons present in the footer */
 .socials a {
 	display: inline;
 }

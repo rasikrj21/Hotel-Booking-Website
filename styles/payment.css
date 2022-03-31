@@ -1,3 +1,4 @@
+/* Styling for the global elements */
 html, body {
 	width: 100%;
 	height: 100%;
@@ -41,6 +42,7 @@ footer p {
 	align-self: flex-end;
 }
 
+/* Styling the main card with the otel image */
 .content {
 	background-color: rgb(132, 136, 139);
 	display: flex;
@@ -49,9 +51,8 @@ footer p {
 	height: 20%;
 	margin: 2% auto;
 }
-.customer-info {
-	margin: 2%;
-}
+
+/* Tarrif details card with the required information */
 .tarrif-details {
 	display: flex;
 	justify-content: space-around;
@@ -63,6 +64,7 @@ footer p {
 	border-radius: 5px;
 }
 
+/* Styling for the modals */
 .form-item {
 	margin: 4% 8%;
 	display: flex;
@@ -81,6 +83,7 @@ footer p {
 	height: 100%;
 }
 
+/* Social icons present in the footer */
 .socials a {
 	display: inline;
 }

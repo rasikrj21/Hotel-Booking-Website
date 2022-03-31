@@ -1,3 +1,4 @@
+/* Adding the styling for the animated div */
 #circle {
 	width: 70px;
 	height: 70px;
@@ -8,6 +9,7 @@
 	animation: loading 1s linear infinite;
 }
 
+/* Animation to be applised to the circle */
 @keyframes loading {
 	0% {
 		transform: rotate(0deg);

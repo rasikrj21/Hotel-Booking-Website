@@ -1,3 +1,4 @@
+/* Styling for the global elements */
 html, body {
 	width: 100%;
 	height: 100%;
@@ -39,19 +40,19 @@ footer {
 footer p {
 	align-self: flex-end;
 }
-
+/* Providing the layout for the forms in the modals */
 .form-item {
 	margin: 4% 8%;
 	display: flex;
 	justify-content: space-between;
 }
-
+/* Layout of the searchbar and the background image */
 .search {
 	background-image: url('https://media-cdn.tripadvisor.com/media/photo-o/14/10/2e/af/india.jpg');
 	height: 380px;
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -75,6 +76,7 @@ footer p {
 	justify-content: center;
 }
 
+/* City Cards Flexbox styling */
 .city-cards {
 	display: flex;
 	justify-content: center;
@@ -93,6 +95,7 @@ footer p {
 	background-position: center;
 	background-repeat: no-repeat;
 }
+/* Overlay used on the city cards */
 .overlay a {
 	color: white;
 }
@@ -109,6 +112,7 @@ footer p {
 	background-position: center;
 	background-repeat: no-repeat;
 }
+/* Layout styling for individual city cards */
 .city-card-item {
 	margin: 4%;
 }
@@ -123,6 +127,8 @@ footer p {
 	justify-self: center;
 	align-self: center;
 }
+
+/* Social icons present in the footer */
 .socials a {
 	display: inline;
 }
