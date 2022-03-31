@@ -21,8 +21,11 @@ header {
 	width: 100%;
 	top: 0;
 }
+header img {
+	margin-left: 1%;
+}
 header a {
-	margin-right: 1%;
+	margin-right: 2%;
 }
 footer {
 	background-color: rosybrown;
@@ -33,9 +36,7 @@ footer {
 	position: fixed;
 	width: 100%;
 	bottom: 0;
-}
-footer p {
-	align-self: flex-end;
+	padding: 0 2%;
 }
 
 form {
@@ -49,12 +50,37 @@ form {
 	padding: 60px 0;
 }
 .main img {
-	height: 500px;
-	width: 500px;
+	height: 350px;
 }
 .main-wrapper {
 	width: 100%;
 	height: 100%;
+}
+
+.payment-form {
+	border: 1px solid black;
+	height: 400px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.payment-form > div {
+	text-align: center;
+}
+form {
+	padding: 0 8%;
+}
+.form-item {
+	display: flex;
+	justify-content: space-between;
+	margin: 20px 0;
+}
+.input {
+	width: 60%;
+}
+
+.socials {
+	margin-right: 3%;
 }
 .socials a {
 	display: inline;
