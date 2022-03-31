@@ -1,34 +1,49 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Detail</title>
         <link rel="stylesheet" href="C:\Users\Rasik\Downloads\Hotel-Booking-Website\styles\detail.css">
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="C:\Users\Rasik\Downloads\Hotel-Booking-Website\styles\common.css">
 
     </head>
     <body>
-        <div class="main-div">
+        <div class="main-wrapper">
             
-            <div class="header-div">
+        
                 <header>
-                <img src="C:\Users\Rasik\Downloads\Hotel-Booking-Website\assests\images\logo.png" alt="logo" id="logo">
+                <img style="height: 60px;" src="C:\Users\Rasik\Downloads\Hotel-Booking-Website\assests\images\logo.png" alt="logo" id="logo">
                 <a href="C:\Users\Rasik\Downloads\Hotel-Booking-Website\login.html" >Login</a>
                 </header>
-            </div>
-            <div class="content-div">
+
+            <div class="main">
                 <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="radissonbluhotel" id="hotel-img"><br>
                 <form action="C:\Users\Rasik\Downloads\Hotel-Booking-Website\payment.html" method="get" target="_self" id="book-form">
+                    <div class="form-item">
                     <label for="Adults">Adults:</label>
-                    <input type="number" name="adult" id="dno" min="1" required><br>
+                    <input type="number" name="adult" id="dno" min="1" required>
+                     </div>
+                     <div class="form-item">
                     <label for="name">Names:</label>
-                    <input type="text" name="name" id="dname" autocomplete="off" required><br>
+                    <input type="text" name="name" id="dname" autocomplete="off" required>
+                     </div>
+                    <div class="form-items">    
                     <label for="fdate">From Date:</label>
-                    <input type="date" name="fromdate" id="fdate" required><br>
+                    <input type="date" name="fromdate" id="fdate" required>
+                    </div>
+                    <div class="form-items">
                     <label for="tdate">To Date:</label>
-                    <input type="date" name="todate" id="tdate" required><br>
+                    <input type="date" name="todate" id="tdate" required>
+                    </div>
+                    <div class="form-items">
                     <label for="total">Total:</label>
-                    <input type="text" name="price" id="total" disabled><br>
+                    <input type="text" name="price" id="total" disabled>
+                    </div>
                     <input type="submit" value="Book Now" name="booknow" id="bnow">
                 </form>
-                <div id="hotel-des">
+                
                 <h2>Radission Blu Hotel</h2>
                 <p>RATING</p>
                 <p>5 Star</p>
@@ -42,21 +57,18 @@
                 </ul>
                 <h5>DESCRIPTION</h5>
                 <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit quis mollitia totam, dignissimos facere fugit quia omnis veniam, autem magnam nostrum aspernatur provident? Libero aliquid maiores eum dolore facere perspiciatis!</P>
+            
             </div>
-            </div>
-            <div class="footer-div">
-                <footer>
-                <a href="C:\Users\Rasik\Downloads\Hotel-Booking-Website\contact.html">Contact Us</a><br>
-                <a href="https://www.facebook.com/" target="_blank"><img src="C:\Users\Rasik\Downloads\Hotel-Booking-Website\assests\images\facebook.png" alt="facebook"  id="social-img"></a>
-                <a href="https://www.instagram.com/" target="_blank"><img src="C:\Users\Rasik\Downloads\Hotel-Booking-Website\assests\images\instagram.png" alt="instagram" id="social-img"></a>
-                <a href="https://twitter.com/login?lang=en" target="_blank"><img src="C:\Users\Rasik\Downloads\Hotel-Booking-Website\assests\images\twitter.png" alt="twitter"  id="social-img"></a><br>
-                &copy; 2020 ROOM SEARCH PVT.LTD
+
+            <footer>
+                <a href="C:\Users\Rasik\Downloads\Hotel-Booking-Website\contact.html">Contact Us</a>
+                <p style="font-size: 10px;">&copy; 2020 ROOM SEARCH PVT.LTD</p>
+                <div class="socials">
+                <a href="https://www.facebook.com/"><img src="C:\Users\Rasik\Downloads\Hotel-Booking-Website\assests\images\facebook.png" alt="facebook" ></a>
+                <a href="https://www.instagram.com/"><img src="C:\Users\Rasik\Downloads\Hotel-Booking-Website\assests\images\instagram.png" alt="instagram"></a>
+                <a href="https://twitter.com/login?lang=en"><img src="C:\Users\Rasik\Downloads\Hotel-Booking-Website\assests\images\twitter.png" alt="twitter" ></a>
+                </div>
             </footer>
-            </div>
-
-
-
-        </div>
-    
+         </div>
     </body>
 </html>
