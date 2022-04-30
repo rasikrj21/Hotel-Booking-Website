@@ -25,6 +25,10 @@ header img {
 	margin-left: 1%;
 }
 
+#logout-button {
+	display: none;
+}
+
 footer {
 	background-color: rosybrown;
 	display: flex;
