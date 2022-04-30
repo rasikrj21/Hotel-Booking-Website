@@ -10,68 +10,8 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap">
     </head>
     <body>
-        
-        <!-- Login Modal -->
-                <div class="modal fade" id="login-modal" tabindex="-1" aria-labelledby="login-modal-label" aria-hidden="true">
-                  <div class="modal-dialog">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h5 class="modal-title" id="login-modal-label">Please Login</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                      </div>
-                      <div class="modal-body" style="text-align: center;">
-                        <form action="index.html" method="get">
-                            <div class="form-item">
-                                <label for="username">Username:</label>
-                                <input type="text" id="username" name="username" placeholder="Enter Username" required>
-                            </div>
-                            <div class="form-item">
-                                <label for="password">Password:</label>
-                                <input type="password" id="password" name="password" placeholder="Enter Password" required>
-                            </div>
-                            <hr>
-                            <button type="submit" class="btn btn-primary">Login</button>
-                        </form>
-                      </div>
-                    </div>
-                  </div>
-                </div>
 
-        <!-- Contact Us Modal -->
-                <div class="modal fade" id="contact-modal" tabindex="-1" aria-labelledby="contact-modal-label" aria-hidden="true">
-                  <div class="modal-dialog">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h5 class="modal-title" id="contact-modal-label">Get in Touch</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                      </div>
-                      <div class="modal-body">
-                        <p>Thank you for reaching out!!!<br>Please enter your email and we will get back to you.</p>
-
-                        <form action="index.html" method="get">
-                            <label for="email">Email: </label>
-                            <input type="email" placeholder="Enter your email" name="email" required><br><br>
-                            <div class="modal-footer">
-                                <button type="submit" class="btn btn-primary">Submit</button>
-                            </div>
-                        </form>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-        <div class="main-wrapper">
-            
-            <!-- Header section with required functionality -->
-            <header>
-                <img style="height: 60px;" src="assets/images/logo.png" alt="The Hotel Logo">
-
-                <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#login-modal" style="margin-right: 1%;">
-                  Login
-                </button>
-
-            </header>
-
+        <div id="header-parent"></div>
             <!-- Main Content -->
 
             <div class="main">
@@ -103,7 +43,7 @@
                         <div class="overlay" style="display: none; background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url('https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg');">Kolkata</div>
                     </div>
                 </div>
-                <div class="city-cards">
+                <div id="extra" class="city-cards">
                     <div class="city-card-item">
                         <!-- card-content is shown by default -->
                         <div class="card-content" style="background-image:url('https://media-cdn.tripadvisor.com/media/photo-s/15/4d/46/b8/chennai-madras.jpg');"></div>
@@ -127,23 +67,16 @@
 
                 <!-- View more button centered with flexbox -->
                 <div class="view-more">
-                    <a href="#" id="view-more"><button type="button" class="btn btn-secondary">View More</button></a>
+                    <button onclick="viewChange();" type="button" id="view-button" class="btn btn-secondary">View More</button>
                 </div>
 
             </div>
 
-            <!-- Footer section with the required functionality -->
-            <footer>
-                <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#contact-modal" style="color: #f4f4f4;">
-                  Contact Us
-                </button>
-                <p style="font-size: 10px;">© 2020 ROOM SEARCH PVT. LTD.</p>
-                <div class="socials">
-                    <a href="https://www.facebook.com/"><img src="assets/images/facebook.png" alt="Facebook Logo"></a>
-                    <a href="https://www.instagram.com/"><img src="assets/images/instagram.png" alt="Instagram Logo"></a>
-                    <a href="https://twitter.com/"><img src="assets/images/twitter.png" alt="Twitter Logo"></a>
-                </div>
-            </footer>
+            <div id="footer-parent"></div>
+            
+            <!-- Adding the Templates -->
+            <script src="scripts/common.js"></script>
+            <script src="scripts/index.js"></script>
             
         </div>
         
