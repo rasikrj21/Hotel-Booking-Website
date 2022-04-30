@@ -1,45 +1,3 @@
-/* Styling for the global elements */
-html, body {
-	width: 100%;
-	height: 100%;
-}
-body {
-	margin: 0;
-	background-color: #e0e0e0;
-	font-family: ubuntu;
-}
-a {
-	text-decoration: none;
-	color: black;
-	font-weight: 600;
-}
-header {
-	background-color: rosybrown;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	position: fixed;
-	width: 100%;
-	top: 0;
-}
-header img {
-	margin-left: 1%;
-}
-footer {
-	background-color: rosybrown;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	height: 60px;
-	position: fixed;
-	width: 100%;
-	bottom: 0;
-	padding: 0 2%;
-}
-footer p {
-	align-self: flex-end;
-}
-
 /* Making white spaces around the main content */
 .main {
 	margin: 2% 4% 2% 4%;
@@ -90,11 +48,4 @@ form {
 	width: 60%;
 }
 
-/* Social icons present in the footer */
-.socials a {
-	display: inline;
-}
-.socials a img {
-	height: 20px;
-	width: 22px;
-}
+

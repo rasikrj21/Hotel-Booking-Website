@@ -1,0 +1,57 @@
+html, body {
+	width: 100%;
+	height: 100%;
+}
+body {
+	margin: 0;
+	background-color: #e0e0e0!important;
+	font-family: ubuntu!important;
+}
+a {
+	text-decoration: none!important;
+	color: black!important;
+}
+
+header {
+	background-color: rosybrown;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: fixed;
+	width: 100%;
+	top: 0;
+}
+header img {
+	margin-left: 1%;
+}
+
+footer {
+	background-color: rosybrown;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 60px;
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+	padding: 0 2%;
+}
+footer p {
+	align-self: flex-end;
+}
+
+/* Providing the layout for the forms in the modals */
+.form-item {
+	margin: 4% 8%;
+	display: flex;
+	justify-content: space-between;
+}
+
+/* Social icons present in the footer */
+.socials a {
+	display: inline;
+}
+.socials a img {
+	height: 20px;
+	width: 22px;
+}
